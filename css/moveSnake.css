@@ -1,0 +1,65 @@
+#divSnakeBegin {
+  width: 100px;
+  height: 25px;
+  background: red;
+  position: relative;
+  animation: snakeAnimationBegin 10s infinite;
+  animation-direction: alternate;
+}
+
+#divSnakeEnd {
+  width: 100px;
+  height: 25px;
+  background: red;
+  position: relative;
+  animation: snakeAnimationEnd 10s infinite;
+  animation-direction: alternate;
+}
+
+@keyframes snakeAnimationBegin {
+  0%    {background: red; left: 0px; top: 0px;}
+  5%    {background: red; left: 75px; top: 0px;}
+  10%   {background: red; left: 150px; top: 0px;}
+  15%   {background: red; left: 225px; top: 0px;}
+  20%   {background: red; left: 300px; top: 0px;}
+  25%   {background: yellow; left: 375px; top: 0px;}
+  30%   {background: yellow; left: 450px; top: 0px;}
+  35%   {background: yellow; left: 525px; top: 0px;}
+  40%   {background: yellow; left: 600px; top: 0px;}
+  45%   {background: yellow; left: 675px; top: 0px;}
+  50%   {background: blue; left: 750px; top: 0px;}
+  55%   {background: blue; left: 825px; top: 0px;}
+  60%   {background: blue; left: 900px; top: 0px;}
+  65%   {background: blue; left: 975px; top: 0px;}
+  70%   {background: blue; left: 1050px; top: 0px;}
+  75%   {background: blue; left: 1125px; top: 0px;}
+  80%   {background: green; left: 1200px; top: 0px;}
+  85%   {background: green; left: 1275px; top: 0px;}
+  90%   {background: green; left: 1350px; top: 0px;}
+  95%   {background: green; left: 1400px; top: 0px;}
+  100%  {background: green; left: 1425px; top: 0px;}
+}
+
+@keyframes snakeAnimationEnd {
+  0%    {background: green; left: 1425px; top: 0px;}
+  5%    {background: green; left: 1400px; top: 0px;}
+  10%   {background: green; left: 1350px; top: 0px;}
+  15%   {background: green; left: 1275px; top: 0px;}
+  20%   {background: green; left: 1200px; top: 0px;}
+  25%   {background: blue; left: 1125px; top: 0px;}
+  30%   {background: blue; left: 1050px; top: 0px;}
+  35%   {background: blue; left: 975px; top: 0px;}
+  40%   {background: blue; left: 900px; top: 0px;}
+  45%   {background: blue; left: 825px; top: 0px;}
+  50%   {background: blue; left: 750px; top: 0px;}
+  55%   {background: yellow; left: 675px; top: 0px;}
+  60%   {background: yellow; left: 600px; top: 0px;}
+  65%   {background: yellow; left: 525px; top: 0px;}
+  70%   {background: yellow; left: 450px; top: 0px;}
+  75%   {background: yellow; left: 375px; top: 0px;}
+  80%   {background: red; left: 300px; top: 0px;}
+  85%   {background: red; left: 225px; top: 0px;}
+  90%   {background: red; left: 150px; top: 0px;}
+  95%   {background: red; left: 75px; top: 0px;}
+  100%  {background: red; left: 0px; top: 0px;}
+}
